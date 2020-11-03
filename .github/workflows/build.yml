@@ -25,7 +25,7 @@ jobs:
           echo ">> Move to /usr/local/bin directory"
           sudo mv ~/build-wrapper-linux-x86/* /usr/local/bin/
           echo ">> Start"
-          build-wrapper-linux-x86-64 --out-dir ./build_wrapper_output make clearn all
+          build-wrapper-linux-x86-64 --out-dir ./build_wrapper_output make clean all
       
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
